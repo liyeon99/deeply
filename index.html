@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>디플리</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- script -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1 class="logo">
+          <span class="blind">deeply</span>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="133" height="44" viewBox="0 0 133 44" fill="none">
+              <path
+                d="M61.6948 15.4558C60.3375 14.0986 58.4463 13.418 56.0172 13.418H50.0859V16.3223H56.0172C56.8008 16.3223 57.4661 16.4453 58.008 16.6899C58.5459 16.9318 58.9881 17.2749 59.3308 17.7191C59.6694 18.1619 59.9191 18.7045 60.0732 19.3523C60.2312 20.0015 60.3082 20.7218 60.3082 21.5118C60.3082 22.3017 60.2193 23.0507 60.0426 23.6958C59.862 24.345 59.5858 24.9067 59.2086 25.3769C58.8314 25.8511 58.336 26.212 57.7291 26.4648C57.1222 26.7136 56.3917 26.8407 55.5298 26.8407H53.3969V19.0393H50.0873V29.7436H55.4647C56.753 29.7436 57.9097 29.57 58.9323 29.2174C59.951 28.8689 60.8196 28.3427 61.5314 27.6429C62.2419 26.9391 62.7851 26.0808 63.165 25.0557C63.5421 24.0348 63.7307 22.8484 63.7307 21.4913C63.7307 18.8207 63.0547 16.8116 61.6974 15.4544L61.6948 15.4558Z"
+                fill="white"></path>
+              <path
+                d="M70.2315 26.842V22.8184H77.2969V19.8908H70.2315V16.3223H77.7432V13.418H66.9219V29.7436H77.4935L78.208 26.8393H70.2315V26.842Z"
+                fill="white"></path>
+              <path
+                d="M84.333 26.842V22.8184H91.3985V19.8908H84.333V16.3223H91.8447V13.418H81.0234V29.7436H91.5911L92.3095 26.8393H84.333V26.842Z"
+                fill="white"></path>
+              <path
+                d="M106.671 16.5874C106.483 15.9697 106.16 15.4284 105.691 14.961C105.226 14.4977 104.596 14.1218 103.804 13.8417C103.013 13.5615 102.005 13.418 100.795 13.418H95.125V29.7436H98.3921V23.9131H100.884C102.068 23.9131 103.048 23.771 103.828 23.4826C104.605 23.1901 105.228 22.7979 105.693 22.3031C106.161 21.8084 106.484 21.2316 106.673 20.5742C106.857 19.9209 106.949 19.2334 106.949 18.5173C106.949 17.8489 106.857 17.2038 106.673 16.5874H106.671ZM103.557 19.6065C103.476 19.9195 103.326 20.1806 103.103 20.3938C102.88 20.607 102.58 20.7778 102.204 20.8967C101.823 21.0197 101.347 21.0826 100.769 21.0826H98.3894V16.2321H100.745C101.322 16.2321 101.803 16.2881 102.18 16.3906C102.557 16.4972 102.856 16.6517 103.079 16.8498C103.302 17.048 103.456 17.2927 103.544 17.581C103.633 17.8694 103.678 18.2056 103.678 18.5856C103.678 18.9655 103.635 19.2936 103.554 19.6065H103.557Z"
+                fill="white"></path>
+              <path d="M113.122 26.8174V13.418H109.812V29.7436H119.891L120.634 26.8161H113.122V26.8174Z" fill="white">
+              </path>
+              <path
+                d="M129.496 13.418L125.963 20.0289L122.538 13.418H118.852L124.337 23.0903V29.7436H127.65V23.0903L133.005 13.418H129.495H129.496Z"
+                fill="white"></path>
+              <path
+                d="M26.288 3.23442C26.288 2.00254 25.3176 1.00391 24.1206 1.00391C22.9235 1.00391 21.9531 2.00254 21.9531 3.23442V29.1668C21.9531 30.3987 22.9235 31.3973 24.1206 31.3973C25.3176 31.3973 26.288 30.3987 26.288 29.1668V3.23442Z"
+                fill="#F73753"></path>
+              <path
+                d="M18.9677 23.4961C18.9677 22.2643 17.9973 21.2656 16.8003 21.2656C15.6032 21.2656 14.6328 22.2643 14.6328 23.4961V39.9325C14.6328 41.1644 15.6032 42.163 16.8003 42.163C17.9973 42.163 18.9677 41.1644 18.9677 39.9325V23.4961Z"
+                fill="#F73753"></path>
+              <path
+                d="M33.6083 15.2774C33.6083 14.0455 32.6379 13.0469 31.4409 13.0469C30.2438 13.0469 29.2734 14.0455 29.2734 15.2774V27.2582C29.2734 28.4901 30.2438 29.4887 31.4409 29.4887C32.6379 29.4887 33.6083 28.4901 33.6083 27.2582V15.2774Z"
+                fill="#F73753"></path>
+              <path
+                d="M33.6083 33.6289C33.6083 32.3971 32.6379 31.3984 31.4409 31.3984C30.2438 31.3984 29.2734 32.3971 29.2734 33.6289C29.2734 34.8608 30.2438 35.8595 31.4409 35.8595C32.6379 35.8595 33.6083 34.8608 33.6083 33.6289Z"
+                fill="#F73753"></path>
+              <path
+                d="M18.9677 17.1836C18.9677 15.9518 17.9973 14.9531 16.8003 14.9531C15.6032 14.9531 14.6328 15.9518 14.6328 17.1836C14.6328 18.4155 15.6032 19.4141 16.8003 19.4141C17.9973 19.4141 18.9677 18.4155 18.9677 17.1836Z"
+                fill="#F73753"></path>
+              <path
+                d="M40.9208 18.5235C40.9208 17.2916 39.9504 16.293 38.7534 16.293C37.5563 16.293 36.5859 17.2916 36.5859 18.5235V25.3435C36.5859 26.5754 37.5563 27.574 38.7534 27.574C39.9504 27.574 40.9208 26.5754 40.9208 25.3435V18.5235Z"
+                fill="#F73753"></path>
+              <path
+                d="M4.33489 17.8204C4.33489 16.5885 3.36449 15.5898 2.16744 15.5898C0.970397 15.5898 0 16.5885 0 17.8204V24.6404C0 25.8722 0.970397 26.8709 2.16744 26.8709C3.36449 26.8709 4.33489 25.8722 4.33489 24.6404V17.8204Z"
+                fill="#F73753"></path>
+              <path
+                d="M11.6552 21.6446C11.6552 20.4127 10.6848 19.4141 9.48776 19.4141C8.29071 19.4141 7.32031 20.4127 7.32031 21.6446V33.6254C7.32031 34.8572 8.29071 35.8559 9.48776 35.8559C10.6848 35.8559 11.6552 34.8572 11.6552 33.6254V21.6446Z"
+                fill="#F73753"></path>
+            </svg>
+          </a>
+        </h1>
+        <button type="button" class="btn-menu" aria-label="menu">
+          <div class="icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li class="gnb-item"><a href="#" class="gnb-link">기술소개</a></li>
+            <li class="gnb-item arrow">
+              <a href="#" class="gnb-link">솔루션</a>
+              <ul class="sub-list">
+                <li class="sub-item"><a href="#" class="sub-link">안전 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">머신 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">커스텀 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">솔루션 구성요소</a></li>
+              </ul>
+            </li>
+            <li class="gnb-item"><a href="#" class="gnb-link">문의하기</a></li>
+            <li class="gnb-item arrow"><a href="#" class="gnb-link">회사소개</a>
+              <ul class="sub-list">
+                <li class="sub-item"><a href="#" class="sub-link">안전 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">머신 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">커스텀 솔루션</a></li>
+                <li class="sub-item"><a href="#" class="sub-link">솔루션 구성요소</a></li>
+              </ul></li>
+            <li class="gnb-item"><a href="#" class="gnb-link gnb-link--set">데이터셋</a></li>
+          </ul>
+          <div class="lang-box">
+            <button type="button" class="btn-lang">KOR</button>
+            <ul class="lang-list">
+              <li class="lang-item active"><a href="#">KOR</a></li>
+              <li class="lang-item"><a href="#">ENG</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="sc-intro">
+        <div class="group-sound">
+          <h2>Sound into<br>Insight</h2>
+          <p class="desc">
+            디플리의 사운드 인공지능 기술은<br>우리가 놓치기 쉬운 수많은 소리를 이해하고 의미를 전달합니다.
+          </p>
+          <div class="video">
+            <video src="./assets/video/sound.mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+        <div class="group-noise">
+          <div class="sticky">
+            <strong class="headline">
+              <span>일상적 소음</span>
+              <span>기술을 만나</span>
+              <span>의미가 되다</span>
+            </strong>
+            <div class="video">
+              <video src="./assets/video/sound2.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-listen">
+        <div class="group-typo">
+          <div class="lottie" id="lottie"></div>
+          <div class="head-inner">
+            <h2>Listen AI</h2>
+          </div>
+          <p>중요한 소리를 놓치지 않는 사운드 인공지능 솔루션</p>
+        </div>
+        <div class="group-solution">
+          <div class="sticky">
+            <ul class="solution-list">
+              <li class="solution-item solution-item1">
+                <div class="bg">
+                  <img src="./assets/images/slide/01.webp" alt>
+                </div>
+                <strong class="title">
+                  긴급 상황을<br class="m-hidden">소리로 감지하는 안전 솔루션
+                </strong>
+                <p class="desc">안전 사고, 응급 상황, 범죄, 난동 등 긴급 상황을 실시간 사운드 AI 모니터링으로 감지해요.</p>
+                <a href="#" class="link-more">자세히 보기</a>
+              </li>
+              <li class="solution-item solution-item2">
+                <div class="bg">
+                  <img src="./assets/images/slide/02.webp" alt>
+                </div>
+                <strong class="title">
+                  기계 장비 상태를<br class="m-hidden">
+                  소리로 점검하는 머신 솔루션
+                </strong>
+                <p class="desc">공장의 기계 설비, 장비를 소리로 모니터링하고 장비의 고장 여부를 바로 파악할 수 있어요.</p>
+                <a href="#" class="link-more">자세히 보기</a>
+              </li>
+              <li class="solution-item solution-item3">
+                <div class="bg">
+                  <img src="./assets/images/slide/03.webp" alt>
+                </div>
+                <strong class="title">
+                  나에게 맞춘 특별한 사운드 AI<br class="m-hidden">
+                  커스텀 솔루션
+                </strong>
+                <p class="desc">특별한 소리를 감지하고 싶으신가요? Listen AI에게 맡겨주세요.</p>
+                <a href="#" class="link-more">자세히 보기</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="group-real">
+          <div class="real-area">
+            <h3 class="headline target">
+              세계 최고 수준의 실시간 사운드 분석 AI
+            </h3>
+            <p class="description target">디플리는 자체 인공지능 모델 개발과 기술 향상에 노력을 기울이고 있어요.<br>
+              다양한 국내외 인증으로 검증된 세계 최고 수준의 기술력을 소개합니다.</p>
+            <div class="technology-wrap target">
+              <div class="thesis-box">
+                <em class="title">
+                  글로벌 1위<br class="m-hidden">
+                  신호처리 학회<br>
+                  ICASSP 2024 논문 게재
+                </em>
+                <p class="desc">
+                  다양한 마이크에서 음원으로 상황을 구분하는 알고리즘에 대해<br>
+                  세계 최고 (SOTA) 기술을 보유하고 있어요.
+                </p>
+              </div>
+              <ul class="card-list">
+                <li class="card-item target">
+                  <div class="icon">
+                    <img src="./assets/images/icons/icon_danger.svg" alt>
+                  </div>
+                  <em class="title">
+                    공공장소 위험 감지<br class="lg-hidden">
+                    이상음원 인식 기술
+                  </em>
+                  <p class="desc">
+                    소동, 신음, 비명 등 비언어 음성을 포착하는 기술로 긴급한 위험 상황을 빠르고 폭넓게 인식할 수 있어요.
+                  </p>
+                </li>
+                <li class="card-item target">
+                  <div class="icon">
+                    <img src="./assets/images/icons/icon_tree.svg" alt>
+                  </div>
+                  <em class="title">
+                    다양한 환경음 분석 능력
+                  </em>
+                  <p class="desc">
+                    폭발음, 총소리, 자동차 사고 등 다양한 환경음을 구분할 수 있어요.
+                  </p>
+                </li>
+                <li class="card-item target">
+                  <div class="icon">
+                    <img src="./assets/images/icons/icon_aiming.svg" alt>
+                  </div>
+                  <em class="title">
+                    음성 키워드 검출 기술
+                  </em>
+                  <p class="desc">
+                    도와주세요, 살려주세요 등 4가지 이상의 키워드를 감지하는 AI 모델로 도움의 목소리를 정확하게 포착해요.
+                  </p>
+                </li>
+                <li class="card-item target">
+                  <div class="icon">
+                    <img src="./assets/images/icons/icon_double-arrow.svg" alt>
+                  </div>
+                  <em class="title">
+                    최고 성능 확보를 위한 고도화 기법
+                  </em>
+                  <p class="desc">
+                    하이퍼 파라미터 튜닝, 전이 학습, 에러 분석, 앙상블 모델, 데이터 증강 등의 기법을 사용해 인공지능 모델의 성능을 보장하기 위해 노력하고 있어요.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="group-case">
+          <div class="case-area">
+            <div class="top-wrap">
+              <div class="typo-wrap target">
+                <h3 class="headline white">
+                  Listen AI를 활용한 다양한 고객 사례
+                </h3>
+                <p class="description white">고객사의 환경과 특수성을 고려한 사운드 인공지능 솔루션을 개발하고 실상황에 적용하고 있어요.</p>
+              </div>
+              <div class="btn-box">
+                <button type="button" class="btn prev" aria-label="이전 슬라이드">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24"
+                    class="svgr-icon-component" stroke-width="2" color="#ffffff">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M11.707 7.707a1 1 0 1 0-1.415-1.414l-5 5.006a1 1 0 0 0 .001 1.414l5 4.995a1 1 0 1 0 1.414-1.415L8.41 13h10.38a1 1 0 1 0 0-2H8.418l3.29-3.293Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <button type="button" class="btn next" aria-label="다음 슬라이드">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24"
+                    class="svgr-icon-component" stroke-width="2" color="#ffffff">
+                    <path fill="currentColor" fill-rule="evenodd"
+                      d="M12.293 7.707a1 1 0 1 1 1.415-1.414l5 5.006a1 1 0 0 1-.001 1.414l-5 4.995a1 1 0 1 1-1.414-1.415L15.59 13H5.211a1 1 0 1 1 0-2h10.371l-3.29-3.293Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-wrap swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide target">
+                  <div class="logo">
+                    <img src="./assets/images/company/logo_kangwonland.svg" alt="강원랜드">
+                  </div>
+                  <strong class="title">
+                    위험상황 모니터링 솔루션
+                  </strong>
+                  <p class="desc">
+                    지하주차장, 휴게 공간 등에서 발생할 수 있는 다양한 사건사고 소리를 분석·탐지하는 솔루션이에요. 관제센터와 연계해 사건사고 조기 대응으로 생명·재산 피해를 최소화하고 빠른 대응을
+                    통한 방문 고객 만족도 증가에 도움을 줬어요.
+                  </p>
+                </li>
+                <li class="swiper-slide target">
+                  <div class="logo">
+                    <img src="./assets/images/company/logo_incheon.svg" alt="인천교통공사">
+                  </div>
+                  <strong class="title">
+                    안정상황 모니터링 솔루션
+                  </strong>
+                  <p class="desc">
+                    지하철 역사 내 화장실에서 안전 사고를 소리 신호로 탐지하는 서비스를 제공했어요. 비명, 고성 등의 소리가 감지되면 역사 보안팀과 연계된 시스템으로 알림을 주어 사건사고를 조기에
+                    대응할 수 있도록 도와요.
+                  </p>
+                </li>
+                <li class="swiper-slide target">
+                  <div class="logo">
+                    <img src="./assets/images/company/logo_mois.svg" alt="행정안전부 정부청사관리본부">
+                  </div>
+                  <strong class="title">
+                    안전사고 모니터링 시스템
+                  </strong>
+                  <p class="desc">
+                    카메라가 설치될 수 없는 공간에서 과밀집, 안전 사고를 의미하는 다양한 소리 신호를 탐지하는 솔루션을 제공했어요. 관제 센터 및 메타버스 연동 디지털 트윈 시스템과 연계하여 사건
+                    사고를 조기대응 할 수 있도록 도와요.
+                  </p>
+                </li>
+                <li class="swiper-slide target">
+                  <div class="logo">
+                    <img src="./assets/images/company/logo_lotte.svg" alt="롯데건설">
+                  </div>
+                  <strong class="title">
+                    건설 현장 발생 소음 AI 모니터링
+                  </strong>
+                  <p class="desc">
+                    건설 현장 주위에서 발생하는 다양한 소리 중에서 공사장에서 발생하는 소음만을 감지하고 규제 범위를 벗어나는지 실시간으로 모니터링해 소음 관련 민원을 최소화하는 솔루션을 제공했어요.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="group-sense">
+          <strong>
+            소리에 의미를 더해<br>더 안전한 세상을 만드는 기술
+          </strong>
+          <div class="video">
+            <video src="./assets/video/sound3.mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+      </section>
+      <section class="sc-company">
+        <div class="inner">
+          <h2 class="headline target">기술 혁신을 이끌어나가는 기업사</h2>
+          <p class="desc target">
+            디플리는 글로벌 수준의 Tech 기업, 공기업과 관계를 맺고<br>
+            기술의 가치를 세상에 전달하는 걸음을 함께하고 있어요.
+          </p>
+          <ul class="company-list target">
+            <li class="company-item">
+              <img src="./assets/images/company/logo_google.svg" alt="GOOGLE">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_sony.svg" alt="sony">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_naver.svg" alt="naver">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_nii.svg" alt="National Institute of Informatics">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_lg_cns.svg" alt="LG CNS">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_kt.svg" alt="KT">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_kb.svg" alt="KB">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_seoul_uv.svg" alt="SEOUL NATIONAL UNIVERSITY">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_yonsei_uv.svg" alt="YONSEL UNIVERSITY">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_koica.svg" alt="KOICA">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_lotte.svg" alt="롯데 건설">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_hanwha.svg" alt="HANWHA">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_kangwonland.svg" alt="강원랜드">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_highone.svg" alt="high1 resort">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_korea_army.svg" alt="대한민국육군">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_ifez.svg" alt="ifez">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_gwangju.svg" alt="광주광역시">
+            </li>
+            <li class="company-item">
+              <img src="./assets/images/company/logo_korea_uv_medi.svg" alt="고려대학교의료원">
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h2 class="blind">푸터</h2>
+      <div class="group-sound">
+        <h3>소리에 <br class="lg-hidden">의미를 더하다</h3>
+      </div>
+      <div class="group-info">
+        <address class="addr-area">
+          <div class="info-wrap">
+            <ul class="info-list">
+              <li class="info-item"><span class="gray">상호명</span> DEEPLY</li>
+              <li class="info-item"><span class="gray">대표번호</span> 070-7459-0704</li>
+              <li class="info-item info-item__addr"><span class="gray">주소</span> 서울 마포구 백범로24길 30, 2층</li>
+              <li class="info-item"><span class="gray">대표자</span> 이수지</li>
+              <li class="info-item"><span class="gray">이메일</span> contact@deeplyinc.com</li>
+              <li class="info-item info-item__business"><span class="gray">사업자등록번호</span> 888-88-00859</li>
+            </ul>
+          </div>
+          <small class="copy gray">Copyright 2024.DEEPLY. All rights reserved.</small>
+        </address>
+        <ul class="terms-list">
+          <li class="terms-item"><a href="#">개인정보처리방침</a></li>
+          <li class="terms-item gray"><a href="#">이용약관</a></li>
+          <li class="terms-item gray"><a href="#">쿠키정책</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+

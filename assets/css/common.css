@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body.hidden{
+  overflow: hidden;
+}
+
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  margin: -1px;
+}
+.inner{
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.white{
+  color: #fff;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.m-hidden{
+  display: none;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (min-width: 992px){
+  .lg-hidden{
+    display: none;
+  }
+  .m-hidden{
+    display: block;
+  }
+  
+}
